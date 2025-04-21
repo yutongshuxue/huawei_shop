@@ -113,21 +113,24 @@ class HomePage extends StatelessWidget {
               ),
             ),
             ListTile(title: Text('全网热卖')),
-            SizedBox(
-              height: 560,
-              child: ListView.builder(
-                padding: EdgeInsets.zero,
-                itemCount: 4,
-                itemBuilder: (BuildContext context, int index) {
-                  return HotCardCom(title: _hotData[index][0],
-                      price: _hotData[index][1],
-                      imgUrl: _hotData[index][2]);
-                },
-              ),
-            ),
+            Column(
+              children: _renderHotData(_hotData),
+            )
           ],
         ),
       ),
     );
   }
+}
+
+List<Widget> _renderHotData(List<List<String>> list){
+  List<Widget> listWidgets = [];
+  for(int i = 0; i<list.length; i++){
+    listWidgets.add(
+        HotCardCom(title: list[i][0],
+            price: list[i][1],
+            imgUrl: list[i][2])
+    );
+  }
+  return listWidgets;
 }
