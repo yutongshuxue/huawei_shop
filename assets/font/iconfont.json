@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "630127",
+      "name": "意见反馈",
+      "font_class": "yijianfankui",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "785026",
+      "name": "关于我们",
+      "font_class": "guanyuwomen",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "1166116",
+      "name": "我的福利",
+      "font_class": "iconfontzhizuobiaozhun023140",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "1391480",
+      "name": "联系客服",
+      "font_class": "lianxikefu",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "6992726",
+      "name": "咨询",
+      "font_class": "zixun",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "11239062",
+      "name": "问题",
+      "font_class": "wenti",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "34626136",
+      "name": "隐私政策",
+      "font_class": "yinsizhengce",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    }
+  ]
+}
