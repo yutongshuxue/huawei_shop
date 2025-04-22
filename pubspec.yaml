@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
   get: ^4.7.2
   carousel_slider: ^5.0.0
+  #流式布局
+  flutter_staggered_grid_view: ^0.7.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -77,10 +79,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: CustomIcon01
+      fonts:
+        - asset: assets/font/iconfont.ttf
+    - family: CustomIcon02
+      fonts:
+        - asset: assets/font/iconfont_2.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
