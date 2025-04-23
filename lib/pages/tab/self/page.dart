@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:huawei_shop/components/top_bottom.dart';
 import 'package:huawei_shop/pages/tab/self/components/user_info.dart';
+import 'package:huawei_shop/router/constant.dart';
 import 'package:huawei_shop/utils/my_icon.dart';
+import 'package:get/get.dart';
 
 class SelfPage extends StatelessWidget {
   SelfPage({super.key});
@@ -187,8 +189,8 @@ class SelfPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 13),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: renderDataFn(_shareData, 3)
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: renderDataFn(_shareData, 3),
                     ),
                   ),
                 ),

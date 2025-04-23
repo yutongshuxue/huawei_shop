@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:huawei_shop/router/constant.dart' show RoutePath;
 
 class UserInfoCom extends StatelessWidget {
   const UserInfoCom({super.key});
@@ -81,7 +83,7 @@ class _TapCapsule extends StatelessWidget {
             ),
             child: Text(
               'V',
-              style:const TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
               ),
@@ -91,7 +93,7 @@ class _TapCapsule extends StatelessWidget {
             padding: EdgeInsets.only(left: 6),
             child: Text(
               'WIN-9',
-              style:const TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
               ),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:huawei_shop/pages/tab/home/page.dart';
 import 'package:huawei_shop/pages/tab/production/page.dart';
 import 'package:huawei_shop/pages/tab/self/page.dart';
+import 'package:huawei_shop/router/constant.dart';
 
 class TabPage extends StatefulWidget {
   const TabPage({super.key});
@@ -31,9 +33,32 @@ class _BottomNavigationBarWidgetState extends State<TabPage> {
           ),
         ],
         onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
+          if (index == 2 && true) {
+            showDialog(
+              context: context,
+              builder:
+                  (context) => AlertDialog(
+                    title: Text("请登录"),
+                    content: Text("您需要登录才能访问此页面"),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context),
+                        child: Text("取消"),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          Get.toNamed(RoutePath.LOGIN);
+                        },
+                        child: Text("去登录"),
+                      ),
+                    ],
+                  ),
+            );
+          }else{
+            setState(() {
+              _currentIndex = index;
+            });
+          }
         },
       ),
     );
