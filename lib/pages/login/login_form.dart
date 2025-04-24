@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:huawei_shop/controller/user_controller.dart';
+import 'package:huawei_shop/router/constant.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -8,16 +11,22 @@ class LoginForm extends StatefulWidget {
 }
 
 class _LoginFormState extends State<LoginForm> {
+
   bool _obscureText = true; // 控制是否显示密码
   final _formKey = GlobalKey<FormState>();
   String _phone = '';
   String _password = '';
+
+  UserController userController = Get.find<UserController>();
 
   void _submit() {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
       print('提交数据: _phone=$_phone, Password=$_password');
       // 发送到服务器...
+      userController.login('xiaozhang', 'avatar', '_phone');
+      //登录成功跳转页面
+      Get.offNamed(RoutePath.TAB);
     }
   }
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:huawei_shop/controller/user_controller.dart';
 import 'package:huawei_shop/router/constant.dart';
 import 'package:huawei_shop/router/router.dart';
 
@@ -24,6 +25,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: RoutePath.INTRO,
       getPages: AppRouter.routes,
+      initialBinding: BindingsBuilder((){
+        Get.put<UserController>(UserController());
+      }),
     );
   }
 }
